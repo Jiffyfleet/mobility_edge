@@ -1,6 +1,6 @@
 -- Table: fleetmanager.request
 
--- DROP TABLE IF EXISTS fleetmanager.request;
+DROP TABLE IF EXISTS fleetmanager.request;
 
 CREATE TABLE IF NOT EXISTS fleetmanager.request
 (
@@ -12,8 +12,8 @@ CREATE TABLE IF NOT EXISTS fleetmanager.request
     country character varying(100) COLLATE pg_catalog."default",
     make character varying(100) COLLATE pg_catalog."default",
     model character varying(100) COLLATE pg_catalog."default",
+    model_year integer,
     "trim" character varying(100) COLLATE pg_catalog."default",
-    model_year character varying(4) COLLATE pg_catalog."default",
     classification character varying(100) COLLATE pg_catalog."default",
     fuel_type character varying(50) COLLATE pg_catalog."default",
     engine_power_cc character varying(10) COLLATE pg_catalog."default",
